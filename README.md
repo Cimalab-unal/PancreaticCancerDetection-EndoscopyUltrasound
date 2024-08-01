@@ -1,6 +1,4 @@
-## Under revision
-
-# A robust descriptor of the pancreas tissue for automatic detection of pancreatic cancer in endoscopic ultrasonography 
+# Robust Descriptor of Pancreatic Tissue for Automatic Detection of Pancreatic Cancer in Endoscopic Ultrasonography
 
 **Authors**: 
 Josué Ruano(a), María Jaramillo(a), Martín Gómez(b), and Eduardo Romero(a) 
@@ -49,3 +47,9 @@ Steps to follow:
     - The repository has three videos per class to execute the complete methodology in the script ./code/main_example.m. But, if you want to test the method with your own data, first you need to generate a new mat file ./Example/RESULTS/train_iterations.mat with the distribution of your data for training and testing, following the original structure of the mat file. Then, your own video collection of Endoscopy Ultrasound must be stored in the path ./Example/Videos and distributed between the CANCER and HEALTHY PANCREAS folders according to the video's label in the new ./Example/RESULTS/train_iterations.mat.
 	- Also, in the script ./code/main_example.m edits the main_root variable with the path where you cloned or downloaded the repository.
     - Run in MATLAB the script ./code/main_example.m
+
+### References
+
+- Ruano, J., Jaramillo, M., Gómez, M., & Romero, E. (2022). Robust descriptor of pancreatic tissue for automatic detection of pancreatic cancer in endoscopic ultrasonography. Ultrasound in Medicine & Biology, 48(8), 1602-1614.
+- Jaramillo, M., Ruano, J., Gómez, M., & Romero, E. (2020, November). Endoscopic ultrasound database of the pancreas. In 16th International Symposium on Medical Information Processing and Analysis (Vol. 11583, pp. 130-135). SPIE.
+- 
