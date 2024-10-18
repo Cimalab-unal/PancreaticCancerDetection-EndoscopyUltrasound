@@ -6,6 +6,8 @@ Josué Ruano(a), María Jaramillo(a), Martín Gómez(b), and Eduardo Romero(a)
 **Affiliations:**
 (a) CIM@LAB, Universidad Nacional de Colombia, (b) Medicina Interna, Universidad Nacional de Colombia 
 
+<img src="pipeline.png?raw=True" width="800px" style="margin:0px 0px"/>
+
 ## Abstract 
 
 Pancreatic Cancer (PC) has reported mortality of 98% and a 5-year survival rate of 6.7%. Experienced gastroenterologists find out 80% of the early stages with endoscopic ultrasonography (EUS). This paper proposes an automatic second reader strategy to detect PC in an entire EUS procedure, rather than focusing on pre-selected frames, as the state-of-the-art methods do. The method unmasks echo tumoral patterns in frames with high probability of tumor. First, Speeded-Up Robust Features define a set of interest points with correlated heterogeneities among different filtering scales. Afterward, intensity gradients of each interest point are summarized by 64 features at certain locations and scales. A frame feature vector is built by concatenating statistics of each feature of the 15 groups of scales. Then, binary classification is performed by Support Vector Machine and Adaboost models. Evaluation was performed using a data set with 55 subjects, 18 of PC class (16,585 frames), and 37 subjects of non-PC class (49,664 frames), randomly splitting ten times. The proposed method reached an accuracy of 92.1%, sensitivity of 96.3%, and specificity of 87.8.3%. The observed results are also stable in noisy experiments while deep learning approaches fail to maintain similar performance.
@@ -48,8 +50,13 @@ Steps to follow:
 	- Also, in the script ./code/main_example.m edits the main_root variable with the path where you cloned or downloaded the repository.
     - Run in MATLAB the script ./code/main_example.m
 
+### Endoscopic ultrasound database
+
+At the link below you can request access to the database.
+
+https://forms.gle/WD4DtMhMboLZ9pgVA
+
 ### References
 
 - Ruano, J., Jaramillo, M., Gómez, M., & Romero, E. (2022). Robust descriptor of pancreatic tissue for automatic detection of pancreatic cancer in endoscopic ultrasonography. Ultrasound in Medicine & Biology, 48(8), 1602-1614.
 - Jaramillo, M., Ruano, J., Gómez, M., & Romero, E. (2020, November). Endoscopic ultrasound database of the pancreas. In 16th International Symposium on Medical Information Processing and Analysis (Vol. 11583, pp. 130-135). SPIE.
-- 
